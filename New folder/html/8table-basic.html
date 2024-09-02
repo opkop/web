@@ -1,0 +1,66 @@
+<!-- Write an HTML code to understand and use tables -->
+
+<html>
+  <head>
+    <title>HTML Table Complete</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 50%;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+      thead {
+        background-color: #f2f2f2;
+      }
+      tfoot {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Employee Information Table</h2>
+
+    <table>
+      <!-- Table Header -->
+      <thead>
+        <tr>
+          <th>Employee ID</th>
+          <th>Employee Name</th>
+          <th colspan="2">Position</th>
+        </tr>
+      </thead>
+
+      <!-- Table Body -->
+      <tbody>
+        <tr>
+          <td rowspan="2">101</td>
+          <td>John Doe</td>
+          <td>Manager</td>
+          <td>HR</td>
+        </tr>
+        <tr>
+          <td>John Doe</td>
+          <td>Team Lead</td>
+          <td>Engineering</td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>Emily Johnson</td>
+          <td colspan="2">Sales Executive</td>
+        </tr>
+      </tbody>
+
+      <!-- Table Footer -->
+      <tfoot>
+        <tr>
+          <td colspan="4">End of Employee Information</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
